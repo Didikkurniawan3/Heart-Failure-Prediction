@@ -1,0 +1,64 @@
+{
+  "evalConfig": {
+    "modelSpecs": [
+      {
+        "labelKey": "HeartDisease"
+      }
+    ],
+    "slicingSpecs": [
+      {},
+      {
+        "featureKeys": [
+          "Sex"
+        ]
+      }
+    ],
+    "metricsSpecs": [
+      {
+        "metrics": [
+          {
+            "className": "AUC"
+          },
+          {
+            "className": "Precision"
+          },
+          {
+            "className": "Recall"
+          },
+          {
+            "className": "ExampleCount"
+          },
+          {
+            "className": "TruePositives"
+          },
+          {
+            "className": "FalsePositives"
+          },
+          {
+            "className": "TrueNegatives"
+          },
+          {
+            "className": "FalseNegatives"
+          },
+          {
+            "className": "BinaryAccuracy",
+            "threshold": {
+              "valueThreshold": {
+                "lowerBound": 0.6
+              }
+            }
+          }
+        ],
+        "modelNames": [
+          ""
+        ]
+      }
+    ]
+  },
+  "version": "0.46.0",
+  "dataLocation": "<user provided PCollection>",
+  "fileFormat": "<unknown>",
+  "modelLocations": {
+    "": "outputs/heart-failure-pipeline/Trainer/model/23/Format-Serving"
+  }
+}
